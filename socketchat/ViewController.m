@@ -25,6 +25,7 @@
     asyncSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:mainQueue];
     serverIP.text = host;
     connPort.text = [NSString stringWithFormat:@"%i", port];
+    // first commit
 }
 
 - (IBAction)send:(id)sender{
