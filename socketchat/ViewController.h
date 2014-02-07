@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCDAsyncSocket.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController{
+    GCDAsyncSocket *asyncSocket;
+    NSError *err;
+    IBOutlet UITextField *serverIP;
+    IBOutlet UITextField *connPort;
+}
+- (IBAction)connect:(id)sender;
+- (IBAction)send:(id)sender;
 @end

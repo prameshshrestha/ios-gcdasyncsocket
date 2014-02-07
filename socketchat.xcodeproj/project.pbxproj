@@ -21,6 +21,7 @@
 		8E8BE6D1183E8A770015BC48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8BE6B3183E8A760015BC48 /* UIKit.framework */; };
 		8E8BE6D9183E8A770015BC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E8BE6D7183E8A770015BC48 /* InfoPlist.strings */; };
 		8E8BE6DB183E8A770015BC48 /* socketchatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8BE6DA183E8A770015BC48 /* socketchatTests.m */; };
+		8E8BE6E7183E8AAB0015BC48 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8BE6E6183E8AAB0015BC48 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8E8BE6D6183E8A770015BC48 /* socketchatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "socketchatTests-Info.plist"; sourceTree = "<group>"; };
 		8E8BE6D8183E8A770015BC48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E8BE6DA183E8A770015BC48 /* socketchatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = socketchatTests.m; sourceTree = "<group>"; };
+		8E8BE6E5183E8AAB0015BC48 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		8E8BE6E6183E8AAB0015BC48 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		8E8BE6B5183E8A760015BC48 /* socketchat */ = {
 			isa = PBXGroup;
 			children = (
+				8E8BE6E4183E8AAB0015BC48 /* TCP */,
 				8E8BE6BE183E8A760015BC48 /* AppDelegate.h */,
 				8E8BE6BF183E8A760015BC48 /* AppDelegate.m */,
 				8E8BE6C1183E8A760015BC48 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				8E8BE6D7183E8A770015BC48 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E8BE6E4183E8AAB0015BC48 /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				8E8BE6E5183E8AAB0015BC48 /* GCDAsyncSocket.h */,
+				8E8BE6E6183E8AAB0015BC48 /* GCDAsyncSocket.m */,
+			);
+			path = TCP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8BE6E7183E8AAB0015BC48 /* GCDAsyncSocket.m in Sources */,
 				8E8BE6C6183E8A760015BC48 /* ViewController.m in Sources */,
 				8E8BE6C0183E8A760015BC48 /* AppDelegate.m in Sources */,
 				8E8BE6BC183E8A760015BC48 /* main.m in Sources */,
